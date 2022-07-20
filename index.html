@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kouyu100 | 寄</title>
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink">
+  <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-typo-title">口语100 | 寄</span>
+    <div class="mdui-toolbar-spacer"></div>
+    <a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '关于', position: 'bottom'}"
+      mdui-dialog="{target: '#aboutDialog'}"><i class="mdui-icon material-icons">&#xe88e;</i></a>
+    <div class="mdui-dialog" id="aboutDialog">
+      <div class="mdui-dialog-title">关于</div>
+      <div class="mdui-dialog-content">
+        <div class="mdui-typo">
+          <p>authToken从<a target="_blank" href="http://028.kouyu100.com/njjlzxhx/">口语100官网</a>的Cookie中获得。</p>
+          <p>在口语100页面登陆成功后，<strong>直接</strong>在浏览器地址栏输入下面这串代码即可。</p>
+          <kbd>javascript:alert(getCookie('authToken')===''?'未找到authToken, 可能是未登录':getCookie('authToken'))</kbd>
+          <p>注：目前已知&nbsp;<u>Google Chrome</u>&nbsp;和&nbsp;<u>Microsoft
+              Edge</u>&nbsp;浏览器会在复制时删除&nbsp;<kbd>javascript:</kbd>&nbsp;前缀，需要手动输入</p>
+          <p>什么？你问我Cookie是什么？<a target="_blank" href="https://www.baidu.com/s?wd=%E7%BD%91%E7%AB%99Cookie">百度</a>请（无慈悲）
+          </p>
+          <hr>
+          <p>Windows客户端在<a target="_blank"
+              href="https://github.com/truebigsand/CustomTools">这里</a>，密码为&nbsp;<kbd><strong>gpdsb114514</strong></kbd>
+          </p>
+          <p>什么？你问我Github怎么用？<a target="_blank" href="https://www.baidu.com/s?wd=Github">百度</a>请（梅开二度）</p>
+        </div>
+      </div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+      </div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
